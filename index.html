@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fcfaf5">
+    <title>Undangan Pernikahan Zilvia & Rival</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+</head>
+<body class="site-body text-gray-800 antialiased overflow-hidden">
+    <div id="progress-bar" class="reading-progress" aria-hidden="true"></div>
+
+    <audio id="bg-music" loop preload="none">
+        <source src="/Song.mp3" type="audio/mpeg">
+    </audio>
+
+    <a href="#main-content" class="skip-link">Lewati ke isi undangan</a>
+
+    <main class="site-shell">
+        <section id="cover-page" class="cover-stage" aria-label="Sampul undangan">
+            <div class="cover-orb cover-orb-a"></div>
+            <div class="cover-orb cover-orb-b"></div>
+            <article class="cover-card surface ornate-frame">
+                <p class="eyebrow">Undangan Pernikahan</p>
+                <h1 class="script-title cover-names">
+                    <span>Zilvia</span>
+                    <i class="fa-solid fa-dove cover-dove" aria-hidden="true"></i>
+                    <span>Rival</span>
+                </h1>
+                <p class="cover-date">23 AGUSTUS 2026</p>
+                <p class="cover-to">Kepada Bapak/Ibu/Saudara/i yang kami hormati</p>
+                <p id="cover-guest" class="cover-guest">Menyambut hari bahagia kami</p>
+                <p class="cover-caption">Kehadiran dan doa restu Bapak/Ibu/Saudara/i adalah anugerah terindah yang mengiringi langkah kami ke depan.</p>
+                <div class="cover-actions">
+                    <button id="btn-open" class="primary-button">Buka dengan Lembut</button>
+                    <button id="btn-share-cover" class="ghost-button" type="button">Bagikan Kabar Bahagia</button>
+                </div>
+            </article>
+        </section>
+
+        <div id="main-content" class="hidden content-shell">
+            <header class="section-stack">
+                <section class="surface hero-slab reveal-on-scroll ornate-frame">
+                    <div class="hero-copy">
+                        <p class="eyebrow">Untuk Keluarga dan Sahabat Tercinta</p>
+                        <h2 class="section-title text-4xl sm:text-5xl">Sebuah undangan kecil, namun penuh harap, doa, dan cinta yang kami jaga seumur hidup.</h2>
+                        <p class="section-lead">
+                            Assalamu'alaikum Warahmatullahi Wabarakatuh. Dengan memohon rahmat dan ridho Allah SWT, kami dengan penuh syukur mengundang Anda untuk hadir di hari bahagia kami.
+                        </p>
+                        <div class="hero-chip-row">
+                            <span class="hero-chip"><i class="fa-regular fa-calendar"></i> 23 Agustus 2026</span>
+                            <span class="hero-chip"><i class="fa-solid fa-location-dot"></i> Sumatera Barat</span>
+                            <span class="hero-chip"><i class="fa-solid fa-heart"></i> Zilvia & Rival</span>
+                        </div>
+                    </div>
+                    <div class="hero-portrait surface">
+                        <div class="portrait-glyph">ZR</div>
+                        <p class="portrait-note">“Baarakallahu laka wa baarakaa alaika wa jama'a bainakumaa fii khoir.”</p>
+                        <p class="portrait-translation">Semoga Allah melimpahkan keberkahan, menyatukan langkah kalian dalam kebaikan, dan menjaga rumah tangga ini dengan kasih sayang.</p>
+                    </div>
+                </section>
+            </header>
+
+            <section class="section-stack reveal-on-scroll">
+                <div class="countdown-panel ornate-frame surface">
+                    <div class="section-heading-row">
+                        <p class="eyebrow">Menuju Hari yang Dinanti</p>
+                        <button id="btn-save-date" class="mini-action" type="button"><i class="fa-regular fa-calendar-plus"></i> Simpan Tanggal</button>
+                    </div>
+                    <div class="countdown-grid" aria-label="Hitung mundur pernikahan">
+                        <div class="count-card"><span id="days">00</span><small>Hari</small></div>
+                        <div class="count-card"><span id="hours">00</span><small>Jam</small></div>
+                        <div class="count-card"><span id="minutes">00</span><small>Menit</small></div>
+                        <div class="count-card"><span id="seconds">00</span><small>Detik</small></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-stack reveal-on-scroll">
+                <div class="section-panel ornate-frame surface">
+                    <div class="section-heading-row">
+                        <p class="eyebrow">Sekilas Tentang Kami</p>
+                        <span class="section-tag">Undangan yang Hangat</span>
+                    </div>
+                    <div class="intro-grid">
+                        <div>
+                            <h2 class="monogram">ZR</h2>
+                            <p class="intro-copy">
+                                Maha suci Allah yang telah menciptakan makhluk-Nya berpasang-pasangan. Dengan penuh syukur, kami memohon doa restu agar setiap langkah kami diberi ketenangan dan keberkahan.
+                            </p>
+                            <div class="couple-box">
+                                <div class="name-block">
+                                    <h3>ZILVIA KOMALA SARI</h3>
+                                    <p>Putri kedua dari Bapak Sulhedi<br>dan Ibu Almh. Dewi Murni</p>
+                                </div>
+                                <div class="separator-mark">&</div>
+                                <div class="name-block">
+                                    <h3>MUHAMMAD RIVAL</h3>
+                                    <p>Putra pertama dari Bapak Mulyadi<br>dan Ibu Darlina</p>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="invite-note">
+                            <h4>Sekilas Pesan</h4>
+                            <p>
+                                Merangkai dua hati dalam satu ikatan adalah awal dari perjalanan panjang kami. Akan menjadi sebuah kehormatan dan kebahagiaan tak terhingga apabila Bapak/Ibu/Saudara/i berkenan hadir untuk mengiringi langkah pertama kami dengan doa dan restu.
+                            </p>
+                            <div class="invite-stats">
+                                <div><strong>2</strong><span>Acara</span></div>
+                                <div><strong>1</strong><span>Janji</span></div>
+                                <div><strong>∞</strong><span>Doa</span></div>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-stack reveal-on-scroll">
+                <div class="section-panel ornate-frame surface">
+                    <div class="section-heading-row">
+                        <p class="eyebrow">Ayat & Hadis</p>
+                        <span class="section-tag">Pernikahan dalam doa</span>
+                    </div>
+                    <div class="verse-grid">
+                        <article class="verse-card">
+                            <p class="verse-label">QS. Ar-Rum: 21</p>
+                            <p class="verse-arabic">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُمْ مِنْ أَنْفُسِكُمْ أَزْوَاجًا لِتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَوَدَّةً وَرَحْمَةً</p>
+                            <p class="verse-translation">
+                                Dan di antara tanda-tanda kebesaran-Nya ialah Dia menciptakan untukmu pasangan-pasangan dari jenismu sendiri agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang.
+                            </p>
+                        </article>
+
+                        <article class="verse-card">
+                            <p class="verse-label">Hadist</p>
+                            <p class="verse-arabic">إِذَا جَاءَكُمْ مَنْ تَرْضَوْنَ دِينَهُ وَخُلُقَهُ فَزَوِّجُوهُ</p>
+                            <p class="verse-translation">
+                                Jika datang kepada kalian seseorang yang kalian ridhai agama dan akhlaknya, maka nikahkanlah dia.
+                            </p>
+                            <p class="verse-source">HR. Tirmidzi</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-stack reveal-on-scroll" id="story">
+                <div class="section-panel ornate-frame surface">
+                    <div class="section-heading-row">
+                        <p class="eyebrow">Kisah Kami</p>
+                        <span class="section-tag">Jejak yang Bertumbuh</span>
+                    </div>
+                    <div class="timeline">
+                        <article class="timeline-item">
+                            <span class="timeline-dot"></span>
+                            <div>
+                                <h4>Awal Bertemu</h4>
+                                <p>Semesta punya cara rahasianya sendiri. Dari sebuah awal yang sederhana, lahir senyum dan sapa yang perlahan menjadi bagian terindah dari hari-hari kami.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item">
+                            <span class="timeline-dot"></span>
+                            <div>
+                                <h4>Keyakinan</h4>
+                                <p>Hari berganti, dan hati pun memilih untuk menetap. Ada rasa tenang yang menyelimuti, meyakinkan kami bahwa melangkah berdua adalah satu-satunya tujuan.</p>
+                            </div>
+                        </article>
+                        <article class="timeline-item">
+                            <span class="timeline-dot"></span>
+                            <div>
+                                <h4>Lamaran</h4>
+                                <p>Sebuah langkah besar diambil. Dengan restu orang-orang tersayang, niat baik ini disambut, mengikat janji untuk menggenggam tangan satu sama lain menyambut hari bahagia.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-stack reveal-on-scroll">
+                <div class="section-panel ornate-frame surface">
+                    <div class="section-heading-row">
+                        <p class="eyebrow">Aksen Visual</p>
+                    </div>
+                    <div class="ornament-layout">
+                        <article class="ornament-feature ornamental-feature-large">
+                            <div class="ornament-feature-head">
+                                <div class="ornament-badge"><i class="fa-solid fa-spa"></i></div>
+                                <div>
+                                    <p class="ornament-kicker">Rangkaian Bunga</p>
+                                    <h3>Harmoni antara kelopak dan garis halus yang memancarkan keanggunan alami.</h3>
+                                </div>
+                            </div>
+                            <div class="ornament-arc" aria-hidden="true">
+                                <span class="ornament-arc-flower ornament-arc-flower-a"></span>
+                                <span class="ornament-arc-flower ornament-arc-flower-b"></span>
+                                <span class="ornament-arc-leaf ornament-arc-leaf-a"></span>
+                                <span class="ornament-arc-leaf ornament-arc-leaf-b"></span>
+                                <span class="ornament-arc-leaf ornament-arc-leaf-c"></span>
+                            </div>
+                            <p class="ornament-copy">
+                                Perpaduan rona emas dan elemen organik ini dirangkai untuk menghadirkan keindahan visual yang hangat. Sebuah sentuhan personal yang dirancang untuk terasa dekat di hati.
+                            </p>
+                        </article>
+
+                        <article class="ornament-feature ornamental-feature-small silhouette-card">
+                            <div class="ornament-badge"><i class="fa-solid fa-heart"></i></div>
+                            <p class="ornament-kicker">Siluet Kasih</p>
+                            <h3>Fokus pada kedekatan rasa, bukan sekadar rupa. Representasi manis dari dua jiwa yang saling melengkapi.</h3>
+                            <div class="silhouette-illustration" aria-hidden="true">
+                                <span class="silhouette-head silhouette-left"></span>
+                                <span class="silhouette-head silhouette-right"></span>
+                                <span class="silhouette-body silhouette-left"></span>
+                                <span class="silhouette-body silhouette-right"></span>
+                                <span class="silhouette-heart"><i class="fa-solid fa-heart"></i></span>
+                            </div>
+                        </article>
+
+                        <article class="ornament-feature ornamental-feature-small monogram-card">
+                            <div class="ornament-badge"><i class="fa-solid fa-pen-nib"></i></div>
+                            <p class="ornament-kicker">Monogram</p>
+                            <h3>Perpaduan dua identitas yang kini terukir manis menjadi satu simbol keabadian.</h3>
+                            <div class="monogram-ring">
+                                <span>ZR</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-stack reveal-on-scroll" id="events">
+                <div class="section-heading-row wide">
+                    <p class="eyebrow">Detail Acara</p>
+                    <div class="inline-actions">
+                        <button id="btn-copy-maps" class="mini-action" type="button"><i class="fa-regular fa-copy"></i> Salin Lokasi</button>
+                    </div>
+                </div>
+                <div class="event-grid">
+                    <article class="event-card ornate-frame surface">
+                        <p class="event-kicker">Akad Nikah</p>
+                        <h3 class="event-day">Jumat</h3>
+                        <div class="event-date-number">21</div>
+                        <p class="event-month">Agustus 2026</p>
+                        <p class="event-time">Pukul 14.00 WIB / Selesai</p>
+                        <p class="event-location">Jorong Koto Tangah, Lapangan Bola Kaki, Buluh Kasok.</p>
+                        <div class="event-actions">
+                            <a class="primary-link" href="https://www.google.com/maps?q=-0.8574361205101013,101.06712341308594&z=17&hl=en" target="_blank" rel="noreferrer">Google Maps</a>
+                            <button class="secondary-link js-copy-location" type="button" data-copy-text="Jorong Koto Tangah, Lapangan Bola Kaki, Buluh Kasok.">Salin</button>
+                        </div>
+                    </article>
+                    <article class="event-card ornate-frame surface">
+                        <p class="event-kicker">Resepsi</p>
+                        <h3 class="event-day">Minggu</h3>
+                        <div class="event-date-number">23</div>
+                        <p class="event-month">Agustus 2026</p>
+                        <p class="event-time">Pukul 10.00 WIB / Selesai</p>
+                        <p class="event-location">Jorong Sungai Jodi Lubuk Tarok.</p>
+                        <div class="event-actions">
+                            <a class="primary-link" href="https://www.google.com/maps?q=-0.8150059580802917,101.00907135009766&z=17&hl=en" target="_blank" rel="noreferrer">Google Maps</a>
+                            <button class="secondary-link js-copy-location" type="button" data-copy-text="Jorong Sungai Jodi Lubuk Tarok.">Salin</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-stack reveal-on-scroll">
+                <div class="gift-panel ornate-frame surface">
+                    <div class="section-heading-row">
+                        <p class="eyebrow">Tanda Kasih</p>
+                        <span class="section-tag">Doa adalah hadiah utama</span>
+                    </div>
+                    <div class="gift-layout">
+                        <div class="gift-copy">
+                            <h3>Dengan penuh hormat, bagi Bapak/Ibu/Saudara/i yang ingin menitipkan tanda kasih untuk Zilvia dan Rival, kami sediakan informasi berikut:</h3>
+                            <div class="bank-card">
+                                <div class="bank-badge"><i class="fa-solid fa-building-columns"></i></div>
+                                <p class="bank-number" id="rekening-number">1090018945303</p>
+                                <p class="bank-name">Bank Mandiri</p>
+                                <p class="bank-owner">a/n ZILVIA KOMALA SARI</p>
+                                <div class="bank-actions">
+                                    <button id="btn-copy-rekening" class="primary-button compact" type="button">Salin No. Rekening</button>
+                                </div>
+                            </div>
+                        </div>
+                        <aside class="gift-side surface">
+                            <p class="gift-quote">Kehadiran Anda sudah menjadi hadiah yang paling berarti, dan doa Anda akan selalu kami simpan dengan penuh syukur.</p>
+                            <p class="gift-note">Kami menanti dengan bahagia kesempatan untuk menyambut Anda di hari yang istimewa ini.</p>
+                            <button id="btn-share-invite" class="primary-link full-width" type="button"><i class="fa-solid fa-share-nodes"></i> Bagikan Undangan</button>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-stack reveal-on-scroll" id="rsvp">
+                <div class="rsvp-grid">
+                    <div class="rsvp-card ornate-frame surface">
+                        <div class="section-heading-row">
+                            <p class="eyebrow">RSVP</p>
+                            <span class="section-tag"><span id="wish-count">0</span> Ucapan</span>
+                        </div>
+                        <form id="guest-form" class="rsvp-form">
+                            <div class="field">
+                                <label for="guest-name">Nama Anda</label>
+                                <input id="guest-name" name="guest-name" type="text" placeholder="Tuliskan nama Anda dengan hangat" autocomplete="name" required>
+                            </div>
+                            <div class="field">
+                                <label for="guest-attendance">Apakah Anda berkenan hadir?</label>
+                                <select id="guest-attendance" name="guest-attendance">
+                                    <option value="Ya, saya hadir">Ya, saya hadir</option>
+                                    <option value="Belum bisa hadir">Belum bisa hadir</option>
+                                </select>
+                            </div>
+                            <div class="field">
+                                <label>Apa yang ingin Anda titipkan?</label>
+                                <div class="emoji-grid" role="radiogroup" aria-label="Pilihan emoji">
+                                    <label><input type="radio" name="emoji" value="😭" required><span>😭</span></label>
+                                    <label><input type="radio" name="emoji" value="😢"><span>😢</span></label>
+                                    <label><input type="radio" name="emoji" value="😐"><span>😐</span></label>
+                                    <label><input type="radio" name="emoji" value="🙂" checked><span>🙂</span></label>
+                                    <label><input type="radio" name="emoji" value="😁"><span>😁</span></label>
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label for="guest-message">Pesan dan Doa</label>
+                                <textarea id="guest-message" name="guest-message" rows="4" placeholder="Tuliskan doa, harapan, atau salam hangat untuk kami..." required></textarea>
+                            </div>
+                            <button type="submit" class="primary-button full-width">Kirim Doa dan Ucapan</button>
+                        </form>
+                    </div>
+                    <aside class="wishes-card ornate-frame surface">
+                        <div class="section-heading-row">
+                            <p class="eyebrow">Ucapan Hangat</p>
+                            <span class="section-tag">Doa yang tersimpan</span>
+                        </div>
+                        <div id="wishes-container" class="wishes-list no-scrollbar"></div>
+                    </aside>
+                </div>
+            </section>
+
+            <section class="section-stack reveal-on-scroll">
+                <div class="closing-card ornate-frame surface">
+                    <p class="closing-quote">Sampai jumpa di hari yang kami tunggu dengan hati penuh syukur. Doa dan kehadiran Anda akan selalu menjadi bagian yang paling berarti bagi kami.</p>
+                    <h2 class="script-title closing-names">Zilvia & Rival</h2>
+                    <p class="closing-signature">Terima kasih telah menjadi bagian dari kisah yang kami peluk dengan doa.</p>
+                </div>
+            </section>
+
+            <footer class="footer-bar">
+                <p>© 2026 The Wedding of Zilvia & Rival.</p>
+                <p>Dibuat dengan cinta dan syukur.</p>
+            </footer>
+        </div>
+    </main>
+
+    <button id="music-control" class="music-fab hidden" type="button" aria-label="Kontrol musik">
+        <i class="fa-solid fa-music"></i>
+    </button>
+
+    <div id="guest-modal" class="guest-modal" role="dialog" aria-modal="true" aria-labelledby="guest-modal-title" aria-describedby="guest-modal-description" hidden>
+        <div class="guest-modal-backdrop" aria-hidden="true"></div>
+        <div class="guest-modal-card ornate-frame surface">
+            <p class="eyebrow">Akses Undangan</p>
+            <h2 id="guest-modal-title">Masukkan nama Anda terlebih dahulu</h2>
+            <p id="guest-modal-description" class="guest-modal-copy">Nama ini akan ditampilkan pada bagian sampul undangan saat Anda masuk.</p>
+            <form id="guest-modal-form" class="guest-modal-form">
+                <div class="field">
+                    <label for="guest-modal-name">Nama</label>
+                    <input id="guest-modal-name" name="guest-modal-name" type="text" placeholder="Contoh: Budi Santoso" autocomplete="name" required>
+                </div>
+                <div class="field">
+                    <label for="guest-modal-role">Role / hubungan</label>
+                    <input id="guest-modal-role" name="guest-modal-role" type="text" placeholder="Contoh: Keluarga, Sahabat, Teman" autocomplete="organization-title">
+                </div>
+                <button type="submit" class="primary-button full-width">Masuk ke Undangan</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
